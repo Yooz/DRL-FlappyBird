@@ -1,5 +1,4 @@
-
-## Playing Flappy Bird Using Dueling Network Architectures (improved standard Deep Q network DQN)
+# Playing Flappy Bird Using Dueling Network Architectures (improved standard Deep Q network DQN)
 
 ## Implementation of Dueling Network Architectures
 
@@ -7,7 +6,7 @@ This code is based on the **mxnet** implementation of [DRL-FlappyBird](https://g
 
 The dueling network architectures described at this repo are from the ICML 2016 best paper presented by Google Deepmind.
 
->[Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/pdf/1511.06581v3.pdf), Ziyu Wang, Tom Schaull, Matteo Hessel, Hado van Hasselt, Marc Lanctot and Nando de Freitas, Google Deepmind, 2016.
+>[Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/pdf/1511.06581v3.pdf), Ziyu Wang, Tom Schaull, Matteo Hessel, Hado van Hasselt, Marc Lanctot and Nando de Freitas, Google Deepmind, ICML, 2016.
 
 
 To run the code, just type python FlappyBirdDQN.py
@@ -28,6 +27,7 @@ the game interface just need to be able to feed the action to the game and outpu
 
 
 ## MISC
-This work is based on the repo: [yenchenlin1994/DeepLearningFlappyBird](https://github.com/yenchenlin1994/DeepLearningFlappyBird.git) (Tensorflow version) and [DRL-FlappyBird](https://github.com/li-haoran/DRL-FlappyBird) (Mxnet version).
-I completed this code when I was an intern at Horizon Robotics. Greately thanks my mentors Jian Zhang and Lixin Cao, and other colleagues (Yifeng Geng, Lichao Huang) for helpful discussion. 
+This work is based on the repo: [DeepLearningFlappyBird](https://github.com/yenchenlin1994/DeepLearningFlappyBird.git) (Tensorflow version) and [DRL-FlappyBird](https://github.com/li-haoran/DRL-FlappyBird) (Mxnet version).
+
+I completed this code when I was an intern at [Horizon Robotics](http://www.horizon-robotics.com/index_en.html). Greately thanks my mentors Jian Zhang and Lixin Cao, and other colleagues (Yifeng Geng, Lichao Huang) for helpful discussion. 
 
