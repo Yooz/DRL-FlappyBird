@@ -3,7 +3,7 @@
 
 ## Implementation of Dueling Network Architectures
 
-This code is based on the **mxnet** implementation of [DRL-FlappyBird](https://github.com/li-haoran/DRL-FlappyBird) by @li-haoran.
+This code is based on the **mxnet** implementation of [DRL-FlappyBird](https://github.com/li-haoran/DRL-FlappyBird) by @[li-haoran](https://github.com/li-haoran).
 
 The dueling network architectures described at this repo are from the ICML 2016 best paper presented by Google Deepmind.
 
