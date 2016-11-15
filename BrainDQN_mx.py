@@ -80,7 +80,7 @@ class BrainDQN:
             return loss
         
         
-      def gen_duel_sym(self, n_acts, batch_size, predict=False):
+    def gen_duel_sym(self, n_acts, batch_size, predict=False):
         data = mx.sym.Variable('data')
         yInput = mx.sym.Variable('yInput')
         actionInput = mx.sym.Variable('actionInput')
