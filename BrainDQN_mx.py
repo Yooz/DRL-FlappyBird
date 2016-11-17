@@ -93,13 +93,10 @@ class BrainDQN:
         relu3 = mx.sym.Activation(data=conv3,act_type='relu',name='relu3')
         flat  = mx.sym.Flatten(data=relu3,NameError='flat')
         fc1 = mx.sym.FullyConnected(data=flat, num_hidden=512,name='fc1')
-
-        val_stream = mx.sym.FullyConnected(data=fc1, num_hidden=512, name='val_stream_linear')
-        val_stream = mx.sym.Activation(data=val_stream, act_type='relu', name='val_stream_act')
+        val_stream = mx.sym.Activation(data=fc1, act_type='relu', name='val_stream_act')
         val_stream = mx.sym.FullyConnected(data=val_stream, num_hidden=1, name='val_stream_res')
 
-        adv_stream = mx.sym.FullyConnected(data=fc1, num_hidden=512, name='adv_stream_linear')
-        adv_stream = mx.sym.Activation(data=adv_stream, act_type='relu', name='adv_stream_act')
+        adv_stream = mx.sym.Activation(data=fc1, act_type='relu', name='adv_stream_act')
         adv_stream = mx.sym.FullyConnected(data=adv_stream, num_hidden=n_acts, name='adv_stream_res')
         
         sum = mx.sym.sum(data=adv_stream,axis=(1,), name='sum')
